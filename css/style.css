@@ -727,7 +727,8 @@ b i:last-child {
     position: relative;
     overflow: hidden;
     display: block;
-    
+    height: 300px !important; /* Adjust the height as needed */
+    width: 100%;   /* Ensure the width is 100% to maintain responsiveness */
 }
 
 .portfolio_item .portfolio_item_hover {
