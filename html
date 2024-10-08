@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.1/font/bootstrap-icons.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <style>
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .pricing-header {
+            padding: 50px 0 50px;
+            text-align: center;
+        }
+        .pricing-header h1 {
+            margin-top: 0px;
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            background: linear-gradient(90deg, #333 0%, #000 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+       
+        .pricing-header p {
+            font-size: 1.2rem;
+            color: #666;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .card {
+            border-radius: 15px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            height: 700px;
+            display: flex;
+            flex-direction: column;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+        }
+        .card .card-content {
+            padding: 30px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .card-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .plan-icon {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        .price-container {
+            margin: 20px 0;
+        }
+        .price {
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+        .price small {
+            font-size: 1rem;
+            color: #999;
+        }
+        .price-per-day {
+            font-size: 0.9rem;
+            color: #666;
+            margin-top: 5px;
+        }
+        .feature-list {
+            flex-grow: 1;
+            margin-bottom: 20px;
+        }
+        .feature-list li {
+            margin: 10px 0;
+            display: flex;
+            align-items: center;
+            font-size: 0.9rem;
+        }
+        .feature-list i {
+            margin-right: 10px;
+            color: #26a69a;
+        }
+        .btn-large {
+            background-color: #39B808;
+            border-radius: 30px;
+            text-transform: none;
+            font-weight: 600;
+            padding: 0 30px;
+        }
+        
+        .premium-card {
+            background: linear-gradient(135deg, #000000 0%, #434343 100%);
+            color: white;
+        }
+        .premium-card .price, .premium-card .feature-list i {
+            color: #26a69a;
+        }
+        .premium-card .price-per-day {
+            color: #ccc;
+        }
+        .limited-spots {
+            margin-top: 10px;
+            color: #ff5252;
+            font-weight: 500;
+        }
+        .container{
+            width: 100%;
+        }
+        .plan-name{
+            font-size: 2.56rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="pricing-header">
+            <img src="/extraContent/PassCardLogo.png" alt="Passcard" style="height: 200px;">
+            <h1>Choose Your Passcard</h1>
+            <p>Replace traditional business cards with a modern, contactless networking solution</p>
+        </div>
+        
+        <div class="row">
+            <!-- Basic Plan -->
+            <div class="col s12 m6 l3">
+                <div class="card">
+                    <div class="card-content center-align">
+                        <i class="bi bi-person-vcard plan-icon blue-text"></i>
+                        <h2 class="plan-name">Basic</h2>
+                        <div class="price-container">
+                            <div class="price">N$0<small>/mo</small></div>
+                            <div class="price-per-day">One time fee of N$250 with free lifetime access</div>
+                        </div>
+                        <ul class="feature-list">
+                            <li><i class="bi bi-check-circle-fill"></i>NFC-enabled card</li>
+                            <li><i class="bi bi-check-circle-fill"></i>QR code on card</li>
+                            <li><i class="bi bi-check-circle-fill"></i>Phone number</li>
+                            <li><i class="bi bi-check-circle-fill"></i>Email address</li>
+                            <li><i class="bi bi-check-circle-fill"></i>Basic bio</li>
+                        </ul>
+                        <a class="waves-effect waves-light btn-large">Get Started</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Professional Plan -->
+            <div class="col s12 m6 l3">
+                <div class="card">
+                    <div class="card-content center-align">
+                        <i class="bi bi-briefcase plan-icon purple-text"></i>
+                        <h2 class="plan-name">Professional</h2>
+                        <div class="price-container">
+                            <div class="price">N$0<small>/mo</small></div>
+                            <div class="price-per-day">One time fee of N$400 with free lifetime access</div>
+                        </div>
+                        <ul class="feature-list">
+                            <li><i class="bi bi-check-circle-fill"></i>All Basic features</li>
+                            <li><i class="bi bi-check-circle-fill"></i>Custom card design</li>
+                            <li><i class="bi bi-check-circle-fill"></i>Company name</li>
+                            <li><i class="bi bi-check-circle-fill"></i>Website link</li>
+                            <li><i class="bi bi-check-circle-fill"></i>Additional social links</li>
+                            <li><i class="bi bi-check-circle-fill"></i>Priority support</li>
+                            <li><i class="bi bi-check-circle-fill"></i>Profile themes</li>
+                        </ul>
+                        <a class="waves-effect waves-light btn-large">Go Professional</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Premium Plan -->
+            <div class="col s12 m6 l3">
+                <div class="card premium-card">
+                    <div class="card-content center-align">
+                        <i class="bi bi-award plan-icon yellow-text text-accent-4"></i>
+                        <h2 class="plan-name">Premium</h2>
+                        <div class="price-container">
+                            <div class="price">N$39<small>/mo</small></div>
+                            <div class="price-per-day">N$1.28 per day</div>
+                            <div class="price-per-day">One time fee of N$350</div>
+                        </div>
+                        <ul class="feature-list">
+                            <li><i class="bi bi-check-circle-fill"></i>All Professional features</li>
+                            <li><i class="bi bi-check-circle-fill"></i>Advanced analytics</li>
+                            <li><i class="bi bi-check-circle-fill"></i>Intro Video</li>
+                            <li><i class="bi bi-check-circle-fill"></i>Product Catalogue</li>
+                            <li><i class="bi bi-check-circle-fill"></i>Sales lead management</li>
+                            <li><i class="bi bi-check-circle-fill"></i>Custom integrations</li>
+                        </ul>
+                        <a class="waves-effect waves-light btn-large">Get Premium</a>
+                        <div class="price-per-day">Coming Soon</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Business Plan -->
+            <div class="col s12 m6 l3">
+                <div class="card">
+                    <div class="card-content center-align">
+                        <i class="bi bi-building plan-icon green-text"></i>
+                        <h2 class="plan-name">Business</h2>
+                        <div class="price-container">
+                            <div class="price">N$249<small>/mo</small></div>
+                            <div class="price-per-day">N$8.18 per day</div>
+                        </div>
+                        <ul class="feature-list">
+                            <li><i class="bi bi-check-circle-fill"></i>All Premium features</li>
+                            <li><i class="bi bi-check-circle-fill"></i>Up to 20 team cards</li>
+                            <li><i class="bi bi-check-circle-fill"></i>Team management portal</li>
+                            <li><i class="bi bi-check-circle-fill"></i>Branded card designs</li>
+                            <li><i class="bi bi-check-circle-fill"></i>Dedicated account manager</li>
+                            <li><i class="bi bi-check-circle-fill"></i>Bulk card ordering</li>
+                        </ul>
+                        <a class="waves-effect waves-light btn-large">Contact Sales</a>
+                        <div class="price-per-day">Coming Soon</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
